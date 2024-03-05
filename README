@@ -1,13 +1,13 @@
-### command if you can't exit in terminal (it stuck): 
+**command if you can't exit in terminal (it stuck):** 
 \q
 
-### command for running existing container:
+**command for running existing container:**
 docker start <container_id_or_name>
-### opening psql console connection to the database:
+**opening psql console connection to the database:**
 docker exec -it <container_id_> psql -U postgres postgres
 
-### When using Fly.io, the local connection to the database should first be enabled by tunneling the localhost port 5432 to the Fly.io database port
+**When using Fly.io, the local connection to the database should first be enabled by tunneling the localhost port 5432 to the Fly.io database port**
 flyctl proxy 5432 -a my-first-fly
 
-### A psql console connection to the database can be opened as:
+**A psql console connection to the database can be opened as:**
 flyctl postgres connect -a my-first-fly
