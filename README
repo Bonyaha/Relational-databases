@@ -3,7 +3,7 @@
 
 **command for running existing container:**
 docker start <container_id_or_name>
-**opening psql console connection to the database:**
+**opening psql console connection to the database from Docker:**
 docker exec -it <container_id_> psql -U postgres postgres
 
 **When using Fly.io, the local connection to the database should first be enabled by tunneling the localhost port 5432 to the Fly.io database port**
