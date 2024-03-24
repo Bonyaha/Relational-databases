@@ -1,9 +1,9 @@
 POST http://localhost:3001/api/notes/ HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhc2h1bmthIiwiaWQiOjIsImlhdCI6MTcxMTI4MTE2M30.Ry7rTX6j10CP90gMr3T1-ubF5Jyn5isIlaWnLRQ0de8
 
 {
-    "content": "Mongoose is cool",
-    "important": true,
-		"date": "2024-03-12T20:15:45.216Z"
+    "content": "Backend is awesome",
+    "important": false		
     
 }
