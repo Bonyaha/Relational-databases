@@ -46,7 +46,6 @@ router.get('/', async (req, res) => {
 
 router.post('/', tokenExtractor, async (req, res) => {
 	try {
-
 		const user = await User.findByPk(req.decodedToken.id)
 		const note = await Note.create({ ...req.body, userId: user.id, date: new Date() })
 		res.json(note)

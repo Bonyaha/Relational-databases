@@ -1,6 +1,6 @@
 const router = require('express').Router()
-
 const { Note, User } = require('../models')
+const { tokenExtractor } = require('../util/middleware')
 
 const isAdmin = async (req, res, next) => {
 	const user = await User.findByPk(req.decodedToken.id)
